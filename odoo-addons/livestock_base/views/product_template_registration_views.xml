@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_template_registration_form" model="ir.ui.view">
+        <field name="name">product.template.registration.form</field>
+        <field name="model">product.template</field>
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <form string="품목 신규등록">
+                <sheet>
+                    <group string="기본 정보">
+                        <group>
+                            <field name="name" string="품명"/>
+                            <field name="default_code" string="품번"/>
+                            <field name="product_account_id"/>
+                            <field name="item_status"/>
+                            <field name="domestic_overseas"/>
+                            <field name="importance"/>
+                            <field name="department_id"/>
+                            <field name="responsible_user_id"/>
+                        </group>
+                        <group>
+                            <field name="category_large_id"/>
+                            <field name="category_mid_id"/>
+                            <field name="category_small_id"/>
+                            <field name="set_product_type"/>
+                            <field name="lot_management"/>
+                            <field name="expiry_unit"/>
+                            <field name="shelf_life_period"/>
+                        </group>
+                    </group>
+                    <group string="축산물 분류">
+                        <group>
+                            <field name="species_id"/>
+                            <field name="gender_id"/>
+                            <field name="eco_type_id"/>
+                            <field name="cut_id"/>
+                        </group>
+                        <group>
+                            <field name="grade_id"/>
+                            <field name="storage_type_id"/>
+                            <field name="use_type_id"/>
+                            <field name="livestock_type_id"/>
+                        </group>
+                    </group>
+                    <group string="구매/생산">
+                        <group>
+                            <field name="main_supplier_id"/>
+                            <field name="manufacturer"/>
+                            <field name="purchase_min_qty"/>
+                            <field name="purchase_interval_qty"/>
+                            <field name="customs_duty_rate"/>
+                            <field name="avg_lead_time_days"/>
+                            <field name="reorder_qty"/>
+                        </group>
+                        <group>
+                            <field name="production_type"/>
+                            <field name="daily_production_qty"/>
+                            <field name="production_lead_time_days"/>
+                            <field name="auto_production_request"/>
+                        </group>
+                    </group>
+                    <group string="단가/세금">
+                        <group>
+                            <field name="vat_type"/>
+                            <field name="vat_rate"/>
+                            <field name="sale_price_vat_included"/>
+                            <field name="purchase_price_vat_included"/>
+                        </group>
+                    </group>
+                    <group string="포장/유통/이력">
+                        <group>
+                            <field name="weight_kg"/>
+                            <field name="packaging_unit_id"/>
+                            <field name="box_type_id"/>
+                            <field name="box_qty"/>
+                            <field name="pallet_box_qty"/>
+                        </group>
+                        <group>
+                            <field name="origin_country_id"/>
+                            <field name="storage_period"/>
+                            <field name="traceability_required"/>
+                            <field name="traceability_report_required"/>
+                            <field name="graded_flag"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_product_template_registration" model="ir.actions.act_window">
+        <field name="name">품목 신규등록</field>
+        <field name="res_model">product.template</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_product_template_registration_form"/>
+        <field name="target">current</field>
+        <field name="groups_id" eval="[(4, ref('group_livestock_registrar'))]"/>
+    </record>
+</odoo>

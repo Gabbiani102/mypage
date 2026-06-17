@@ -1,0 +1,1039 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <record id="code_group_gender" model="livestock.code.group">
+        <field name="code">GENDER</field>
+        <field name="name">성별</field>
+    </record>
+    <record id="code_group_gender_00" model="livestock.code">
+        <field name="group_id" ref="code_group_gender"/>
+        <field name="code">성별공통</field>
+        <field name="name">성별공통</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_gender_01" model="livestock.code">
+        <field name="group_id" ref="code_group_gender"/>
+        <field name="code">거세</field>
+        <field name="name">거세</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_gender_02" model="livestock.code">
+        <field name="group_id" ref="code_group_gender"/>
+        <field name="code">암</field>
+        <field name="name">암</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_eco_type" model="livestock.code.group">
+        <field name="code">ECO_TYPE</field>
+        <field name="name">친환경구분</field>
+    </record>
+    <record id="code_group_eco_type_00" model="livestock.code">
+        <field name="group_id" ref="code_group_eco_type"/>
+        <field name="code">무항생제</field>
+        <field name="name">무항생제</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_eco_type_01" model="livestock.code">
+        <field name="group_id" ref="code_group_eco_type"/>
+        <field name="code">일반</field>
+        <field name="name">일반</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_storage_type" model="livestock.code.group">
+        <field name="code">STORAGE_TYPE</field>
+        <field name="name">보관</field>
+    </record>
+    <record id="code_group_storage_type_00" model="livestock.code">
+        <field name="group_id" ref="code_group_storage_type"/>
+        <field name="code">냉장</field>
+        <field name="name">냉장</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_storage_type_01" model="livestock.code">
+        <field name="group_id" ref="code_group_storage_type"/>
+        <field name="code">냉동</field>
+        <field name="name">냉동</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_storage_type_02" model="livestock.code">
+        <field name="group_id" ref="code_group_storage_type"/>
+        <field name="code">실온</field>
+        <field name="name">실온</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_use_type" model="livestock.code.group">
+        <field name="code">USE_TYPE</field>
+        <field name="name">용도</field>
+    </record>
+    <record id="code_group_use_type_00" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">구이용</field>
+        <field name="name">구이용</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_use_type_01" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">스테이크용</field>
+        <field name="name">스테이크용</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_use_type_02" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">국거리용</field>
+        <field name="name">국거리용</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_use_type_03" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">불고기용</field>
+        <field name="name">불고기용</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_use_type_04" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">잡채용</field>
+        <field name="name">잡채용</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_use_type_05" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">장조림용</field>
+        <field name="name">장조림용</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_use_type_06" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">짜장카레용</field>
+        <field name="name">짜장카레용</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="code_group_use_type_07" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">보쌈용</field>
+        <field name="name">보쌈용</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="code_group_use_type_08" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">샤브샤브용</field>
+        <field name="name">샤브샤브용</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="code_group_use_type_09" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">수육용</field>
+        <field name="name">수육용</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="code_group_use_type_10" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">스키야키용</field>
+        <field name="name">스키야키용</field>
+        <field name="sequence">110</field>
+    </record>
+    <record id="code_group_use_type_11" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">돈까스용</field>
+        <field name="name">돈까스용</field>
+        <field name="sequence">120</field>
+    </record>
+    <record id="code_group_use_type_12" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">육전용</field>
+        <field name="name">육전용</field>
+        <field name="sequence">130</field>
+    </record>
+    <record id="code_group_use_type_13" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">육회용</field>
+        <field name="name">육회용</field>
+        <field name="sequence">140</field>
+    </record>
+    <record id="code_group_use_type_14" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">찜갈비용</field>
+        <field name="name">찜갈비용</field>
+        <field name="sequence">150</field>
+    </record>
+    <record id="code_group_use_type_15" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">찌개용</field>
+        <field name="name">찌개용</field>
+        <field name="sequence">160</field>
+    </record>
+    <record id="code_group_use_type_16" model="livestock.code">
+        <field name="group_id" ref="code_group_use_type"/>
+        <field name="code">산적용</field>
+        <field name="name">산적용</field>
+        <field name="sequence">170</field>
+    </record>
+    <record id="code_group_livestock_product_type" model="livestock.code.group">
+        <field name="code">LIVESTOCK_PRODUCT_TYPE</field>
+        <field name="name">축산물유형</field>
+    </record>
+    <record id="code_group_livestock_product_type_00" model="livestock.code">
+        <field name="group_id" ref="code_group_livestock_product_type"/>
+        <field name="code">가공품(가공1)</field>
+        <field name="name">가공품(가공1)</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_livestock_product_type_01" model="livestock.code">
+        <field name="group_id" ref="code_group_livestock_product_type"/>
+        <field name="code">가공품(가공2)</field>
+        <field name="name">가공품(가공2)</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_livestock_product_type_02" model="livestock.code">
+        <field name="group_id" ref="code_group_livestock_product_type"/>
+        <field name="code">양념육(냉동)</field>
+        <field name="name">양념육(냉동)</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_livestock_product_type_03" model="livestock.code">
+        <field name="group_id" ref="code_group_livestock_product_type"/>
+        <field name="code">양념육(냉장)</field>
+        <field name="name">양념육(냉장)</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_livestock_product_type_04" model="livestock.code">
+        <field name="group_id" ref="code_group_livestock_product_type"/>
+        <field name="code">포장육(냉동)</field>
+        <field name="name">포장육(냉동)</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_livestock_product_type_05" model="livestock.code">
+        <field name="group_id" ref="code_group_livestock_product_type"/>
+        <field name="code">포장육(냉장)</field>
+        <field name="name">포장육(냉장)</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_distribution_structure" model="livestock.code.group">
+        <field name="code">DISTRIBUTION_STRUCTURE</field>
+        <field name="name">유통구조</field>
+    </record>
+    <record id="code_group_distribution_structure_00" model="livestock.code">
+        <field name="group_id" ref="code_group_distribution_structure"/>
+        <field name="code">도축장</field>
+        <field name="name">도축장</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_distribution_structure_01" model="livestock.code">
+        <field name="group_id" ref="code_group_distribution_structure"/>
+        <field name="code">오프라인</field>
+        <field name="name">오프라인</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_distribution_structure_02" model="livestock.code">
+        <field name="group_id" ref="code_group_distribution_structure"/>
+        <field name="code">온라인</field>
+        <field name="name">온라인</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_distribution_structure_03" model="livestock.code">
+        <field name="group_id" ref="code_group_distribution_structure"/>
+        <field name="code">자사 채널</field>
+        <field name="name">자사 채널</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_distribution_structure_04" model="livestock.code">
+        <field name="group_id" ref="code_group_distribution_structure"/>
+        <field name="code">축산물가공장</field>
+        <field name="name">축산물가공장</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_partner_classification_value" model="livestock.code.group">
+        <field name="code">PARTNER_CLASSIFICATION_VALUE</field>
+        <field name="name">거래처분류값</field>
+    </record>
+    <record id="code_group_partner_classification_value_00" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">OEM</field>
+        <field name="name">OEM</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_partner_classification_value_01" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">가맹 매장</field>
+        <field name="name">가맹 매장</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_partner_classification_value_02" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">가맹 외식</field>
+        <field name="name">가맹 외식</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_partner_classification_value_03" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">개인사육</field>
+        <field name="name">개인사육</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_partner_classification_value_04" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">급식</field>
+        <field name="name">급식</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_partner_classification_value_05" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">대형마트</field>
+        <field name="name">대형마트</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_partner_classification_value_06" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">도/소매</field>
+        <field name="name">도/소매</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="code_group_partner_classification_value_07" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">도축장</field>
+        <field name="name">도축장</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="code_group_partner_classification_value_08" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">백화점</field>
+        <field name="name">백화점</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="code_group_partner_classification_value_09" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">복지몰</field>
+        <field name="name">복지몰</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="code_group_partner_classification_value_10" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">슈퍼마켓</field>
+        <field name="name">슈퍼마켓</field>
+        <field name="sequence">110</field>
+    </record>
+    <record id="code_group_partner_classification_value_11" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">식당</field>
+        <field name="name">식당</field>
+        <field name="sequence">120</field>
+    </record>
+    <record id="code_group_partner_classification_value_12" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">식자재</field>
+        <field name="name">식자재</field>
+        <field name="sequence">130</field>
+    </record>
+    <record id="code_group_partner_classification_value_13" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">오픈마켓(소셜)</field>
+        <field name="name">오픈마켓(소셜)</field>
+        <field name="sequence">140</field>
+    </record>
+    <record id="code_group_partner_classification_value_14" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">위탁사육</field>
+        <field name="name">위탁사육</field>
+        <field name="sequence">150</field>
+    </record>
+    <record id="code_group_partner_classification_value_15" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">자사몰-도매몰(비즈몰)</field>
+        <field name="name">자사몰-도매몰(비즈몰)</field>
+        <field name="sequence">160</field>
+    </record>
+    <record id="code_group_partner_classification_value_16" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">자사몰-설성목장</field>
+        <field name="name">자사몰-설성목장</field>
+        <field name="sequence">170</field>
+    </record>
+    <record id="code_group_partner_classification_value_17" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">종합몰</field>
+        <field name="name">종합몰</field>
+        <field name="sequence">180</field>
+    </record>
+    <record id="code_group_partner_classification_value_18" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">직영 매장</field>
+        <field name="name">직영 매장</field>
+        <field name="sequence">190</field>
+    </record>
+    <record id="code_group_partner_classification_value_19" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">직영 외식</field>
+        <field name="name">직영 외식</field>
+        <field name="sequence">200</field>
+    </record>
+    <record id="code_group_partner_classification_value_20" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">직영사육</field>
+        <field name="name">직영사육</field>
+        <field name="sequence">210</field>
+    </record>
+    <record id="code_group_partner_classification_value_21" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">창고형 매장</field>
+        <field name="name">창고형 매장</field>
+        <field name="sequence">220</field>
+    </record>
+    <record id="code_group_partner_classification_value_22" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">축산물가공장</field>
+        <field name="name">축산물가공장</field>
+        <field name="sequence">230</field>
+    </record>
+    <record id="code_group_partner_classification_value_23" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">친환경 전문점(초록마을)</field>
+        <field name="name">친환경 전문점(초록마을)</field>
+        <field name="sequence">240</field>
+    </record>
+    <record id="code_group_partner_classification_value_24" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">특판 거래처-선물세트</field>
+        <field name="name">특판 거래처-선물세트</field>
+        <field name="sequence">250</field>
+    </record>
+    <record id="code_group_partner_classification_value_25" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">편의점</field>
+        <field name="name">편의점</field>
+        <field name="sequence">260</field>
+    </record>
+    <record id="code_group_partner_classification_value_26" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_classification_value"/>
+        <field name="code">홈쇼핑</field>
+        <field name="name">홈쇼핑</field>
+        <field name="sequence">270</field>
+    </record>
+    <record id="code_group_partner_type" model="livestock.code.group">
+        <field name="code">PARTNER_TYPE</field>
+        <field name="name">거래처종류</field>
+    </record>
+    <record id="code_group_partner_type_00" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">국내매출</field>
+        <field name="name">국내매출</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_partner_type_01" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">국내매입</field>
+        <field name="name">국내매입</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_partner_type_02" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">해외매출</field>
+        <field name="name">해외매출</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_partner_type_03" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">해외매입</field>
+        <field name="name">해외매입</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_partner_type_04" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">외주가공</field>
+        <field name="name">외주가공</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_partner_type_05" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">비용</field>
+        <field name="name">비용</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_partner_type_06" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">개인</field>
+        <field name="name">개인</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="code_group_partner_type_07" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">도축장</field>
+        <field name="name">도축장</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="code_group_partner_type_08" model="livestock.code">
+        <field name="group_id" ref="code_group_partner_type"/>
+        <field name="code">기타</field>
+        <field name="name">기타</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="code_group_sales_report_type" model="livestock.code.group">
+        <field name="code">SALES_REPORT_TYPE</field>
+        <field name="name">매출처유형(신고용)</field>
+    </record>
+    <record id="code_group_sales_report_type_00" model="livestock.code">
+        <field name="group_id" ref="code_group_sales_report_type"/>
+        <field name="code">국내매출거래처</field>
+        <field name="name">국내매출거래처</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_sales_report_type_01" model="livestock.code">
+        <field name="group_id" ref="code_group_sales_report_type"/>
+        <field name="code">국내매입거래처</field>
+        <field name="name">국내매입거래처</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_sales_report_type_02" model="livestock.code">
+        <field name="group_id" ref="code_group_sales_report_type"/>
+        <field name="code">해외매출거래처</field>
+        <field name="name">해외매출거래처</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_sales_report_type_03" model="livestock.code">
+        <field name="group_id" ref="code_group_sales_report_type"/>
+        <field name="code">해외매입거래처</field>
+        <field name="name">해외매입거래처</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_sales_report_type_04" model="livestock.code">
+        <field name="group_id" ref="code_group_sales_report_type"/>
+        <field name="code">기타거래처</field>
+        <field name="name">기타거래처</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_box_type" model="livestock.code.group">
+        <field name="code">BOX_TYPE</field>
+        <field name="name">박스종류</field>
+    </record>
+    <record id="code_group_box_type_00" model="livestock.code">
+        <field name="group_id" ref="code_group_box_type"/>
+        <field name="code">P박스(No.531_자주색)</field>
+        <field name="name">P박스(No.531_자주색)</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_box_type_01" model="livestock.code">
+        <field name="group_id" ref="code_group_box_type"/>
+        <field name="code">P박스(No_532_주황색)</field>
+        <field name="name">P박스(No_532_주황색)</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_box_type_02" model="livestock.code">
+        <field name="group_id" ref="code_group_box_type"/>
+        <field name="code">RRP박스(트레이형)</field>
+        <field name="name">RRP박스(트레이형)</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_box_type_03" model="livestock.code">
+        <field name="group_id" ref="code_group_box_type"/>
+        <field name="code">지박스(소)</field>
+        <field name="name">지박스(소)</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_box_type_04" model="livestock.code">
+        <field name="group_id" ref="code_group_box_type"/>
+        <field name="code">지박스(대)</field>
+        <field name="name">지박스(대)</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_box_type_05" model="livestock.code">
+        <field name="group_id" ref="code_group_box_type"/>
+        <field name="code">지박스(특대)</field>
+        <field name="name">지박스(특대)</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_product_category_large" model="livestock.code.group">
+        <field name="code">PRODUCT_CATEGORY_LARGE</field>
+        <field name="name">품목대분류</field>
+    </record>
+    <record id="code_group_product_category_large_00" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">가공품</field>
+        <field name="name">가공품</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_product_category_large_01" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">결합품</field>
+        <field name="name">결합품</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_product_category_large_02" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">부원료</field>
+        <field name="name">부원료</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_product_category_large_03" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">부자재(포장재)</field>
+        <field name="name">부자재(포장재)</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_product_category_large_04" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">세절육</field>
+        <field name="name">세절육</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_product_category_large_05" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">세트품</field>
+        <field name="name">세트품</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_product_category_large_06" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">소모품</field>
+        <field name="name">소모품</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="code_group_product_category_large_07" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">양념육</field>
+        <field name="name">양념육</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="code_group_product_category_large_08" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">외식사업</field>
+        <field name="name">외식사업</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="code_group_product_category_large_09" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">원재료</field>
+        <field name="name">원재료</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="code_group_product_category_large_10" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_large"/>
+        <field name="code">포장육</field>
+        <field name="name">포장육</field>
+        <field name="sequence">110</field>
+    </record>
+    <record id="code_group_product_category_mid" model="livestock.code.group">
+        <field name="code">PRODUCT_CATEGORY_MID</field>
+        <field name="name">품목중분류</field>
+    </record>
+    <record id="code_group_product_category_mid_00" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">간편조리세트</field>
+        <field name="name">간편조리세트</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_product_category_mid_01" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">결합상품</field>
+        <field name="name">결합상품</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_product_category_mid_02" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">계육</field>
+        <field name="name">계육</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_product_category_mid_03" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">구이류</field>
+        <field name="name">구이류</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_product_category_mid_04" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">국탕류</field>
+        <field name="name">국탕류</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_product_category_mid_05" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">기초조미료</field>
+        <field name="name">기초조미료</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_product_category_mid_06" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">기타부원료류</field>
+        <field name="name">기타부원료류</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="code_group_product_category_mid_07" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">기타소모품류</field>
+        <field name="name">기타소모품류</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="code_group_product_category_mid_08" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">기타원자재류</field>
+        <field name="name">기타원자재류</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="code_group_product_category_mid_09" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">기타중분류</field>
+        <field name="name">기타중분류</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="code_group_product_category_mid_10" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">기타포장재류</field>
+        <field name="name">기타포장재류</field>
+        <field name="sequence">110</field>
+    </record>
+    <record id="code_group_product_category_mid_11" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">농산물</field>
+        <field name="name">농산물</field>
+        <field name="sequence">120</field>
+    </record>
+    <record id="code_group_product_category_mid_12" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">라벨류</field>
+        <field name="name">라벨류</field>
+        <field name="sequence">130</field>
+    </record>
+    <record id="code_group_product_category_mid_13" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">매장상품</field>
+        <field name="name">매장상품</field>
+        <field name="sequence">140</field>
+    </record>
+    <record id="code_group_product_category_mid_14" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">박스류</field>
+        <field name="name">박스류</field>
+        <field name="sequence">150</field>
+    </record>
+    <record id="code_group_product_category_mid_15" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">보자기류</field>
+        <field name="name">보자기류</field>
+        <field name="sequence">160</field>
+    </record>
+    <record id="code_group_product_category_mid_16" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">분말류</field>
+        <field name="name">분말류</field>
+        <field name="sequence">170</field>
+    </record>
+    <record id="code_group_product_category_mid_17" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">분쇄가공품류</field>
+        <field name="name">분쇄가공품류</field>
+        <field name="sequence">180</field>
+    </record>
+    <record id="code_group_product_category_mid_18" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">사무용품류</field>
+        <field name="name">사무용품류</field>
+        <field name="sequence">190</field>
+    </record>
+    <record id="code_group_product_category_mid_19" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">생산소모품류</field>
+        <field name="name">생산소모품류</field>
+        <field name="sequence">200</field>
+    </record>
+    <record id="code_group_product_category_mid_20" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">선물세트</field>
+        <field name="name">선물세트</field>
+        <field name="sequence">210</field>
+    </record>
+    <record id="code_group_product_category_mid_21" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">세제류</field>
+        <field name="name">세제류</field>
+        <field name="sequence">220</field>
+    </record>
+    <record id="code_group_product_category_mid_22" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">소스류</field>
+        <field name="name">소스류</field>
+        <field name="sequence">230</field>
+    </record>
+    <record id="code_group_product_category_mid_23" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">수입계육</field>
+        <field name="name">수입계육</field>
+        <field name="sequence">240</field>
+    </record>
+    <record id="code_group_product_category_mid_24" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">수입돈</field>
+        <field name="name">수입돈</field>
+        <field name="sequence">250</field>
+    </record>
+    <record id="code_group_product_category_mid_25" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">수입우</field>
+        <field name="name">수입우</field>
+        <field name="sequence">260</field>
+    </record>
+    <record id="code_group_product_category_mid_26" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">수출</field>
+        <field name="name">수출</field>
+        <field name="sequence">270</field>
+    </record>
+    <record id="code_group_product_category_mid_27" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">슬리브류</field>
+        <field name="name">슬리브류</field>
+        <field name="sequence">280</field>
+    </record>
+    <record id="code_group_product_category_mid_28" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">어묵류</field>
+        <field name="name">어묵류</field>
+        <field name="sequence">290</field>
+    </record>
+    <record id="code_group_product_category_mid_29" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">오일류</field>
+        <field name="name">오일류</field>
+        <field name="sequence">300</field>
+    </record>
+    <record id="code_group_product_category_mid_30" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">유제품류</field>
+        <field name="name">유제품류</field>
+        <field name="sequence">310</field>
+    </record>
+    <record id="code_group_product_category_mid_31" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">육포류</field>
+        <field name="name">육포류</field>
+        <field name="sequence">320</field>
+    </record>
+    <record id="code_group_product_category_mid_32" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">즉석조리류</field>
+        <field name="name">즉석조리류</field>
+        <field name="sequence">330</field>
+    </record>
+    <record id="code_group_product_category_mid_33" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">지함류</field>
+        <field name="name">지함류</field>
+        <field name="sequence">340</field>
+    </record>
+    <record id="code_group_product_category_mid_34" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">치즈류</field>
+        <field name="name">치즈류</field>
+        <field name="sequence">350</field>
+    </record>
+    <record id="code_group_product_category_mid_35" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">튀김류</field>
+        <field name="name">튀김류</field>
+        <field name="sequence">360</field>
+    </record>
+    <record id="code_group_product_category_mid_36" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">트레이류</field>
+        <field name="name">트레이류</field>
+        <field name="sequence">370</field>
+    </record>
+    <record id="code_group_product_category_mid_37" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">파우치류</field>
+        <field name="name">파우치류</field>
+        <field name="sequence">380</field>
+    </record>
+    <record id="code_group_product_category_mid_38" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">포장소모품류</field>
+        <field name="name">포장소모품류</field>
+        <field name="sequence">390</field>
+    </record>
+    <record id="code_group_product_category_mid_39" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">필름류</field>
+        <field name="name">필름류</field>
+        <field name="sequence">400</field>
+    </record>
+    <record id="code_group_product_category_mid_40" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">한돈</field>
+        <field name="name">한돈</field>
+        <field name="sequence">410</field>
+    </record>
+    <record id="code_group_product_category_mid_41" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">한우</field>
+        <field name="name">한우</field>
+        <field name="sequence">420</field>
+    </record>
+    <record id="code_group_product_category_mid_42" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">해조류</field>
+        <field name="name">해조류</field>
+        <field name="sequence">430</field>
+    </record>
+    <record id="code_group_product_category_mid_43" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_mid"/>
+        <field name="code">향신료</field>
+        <field name="name">향신료</field>
+        <field name="sequence">440</field>
+    </record>
+    <record id="code_group_product_category_small" model="livestock.code.group">
+        <field name="code">PRODUCT_CATEGORY_SMALL</field>
+        <field name="name">품목소분류 (샘플, 전체 263건은 엑셀 일괄 업로드로 등록 권장)</field>
+    </record>
+    <record id="code_group_product_category_small_00" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">1차부산물</field>
+        <field name="name">1차부산물</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_group_product_category_small_01" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">2차부산물</field>
+        <field name="name">2차부산물</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_group_product_category_small_02" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">MAP라벨</field>
+        <field name="name">MAP라벨</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="code_group_product_category_small_03" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">MAP트레이</field>
+        <field name="name">MAP트레이</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="code_group_product_category_small_04" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">OEM</field>
+        <field name="name">OEM</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="code_group_product_category_small_05" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">RRP박스</field>
+        <field name="name">RRP박스</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="code_group_product_category_small_06" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">가공육(절단육)</field>
+        <field name="name">가공육(절단육)</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="code_group_product_category_small_07" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">가공품</field>
+        <field name="name">가공품</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="code_group_product_category_small_08" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">가공품슬리브</field>
+        <field name="name">가공품슬리브</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="code_group_product_category_small_09" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">가공품파우치</field>
+        <field name="name">가공품파우치</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="code_group_product_category_small_10" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">가브리살</field>
+        <field name="name">가브리살</field>
+        <field name="sequence">110</field>
+    </record>
+    <record id="code_group_product_category_small_11" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">가슴</field>
+        <field name="name">가슴</field>
+        <field name="sequence">120</field>
+    </record>
+    <record id="code_group_product_category_small_12" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">가슴살</field>
+        <field name="name">가슴살</field>
+        <field name="sequence">130</field>
+    </record>
+    <record id="code_group_product_category_small_13" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">갈매기살</field>
+        <field name="name">갈매기살</field>
+        <field name="sequence">140</field>
+    </record>
+    <record id="code_group_product_category_small_14" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">갈비</field>
+        <field name="name">갈비</field>
+        <field name="sequence">150</field>
+    </record>
+    <record id="code_group_product_category_small_15" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">갈비덧살</field>
+        <field name="name">갈비덧살</field>
+        <field name="sequence">160</field>
+    </record>
+    <record id="code_group_product_category_small_16" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">갈비살</field>
+        <field name="name">갈비살</field>
+        <field name="sequence">170</field>
+    </record>
+    <record id="code_group_product_category_small_17" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">갈비양지</field>
+        <field name="name">갈비양지</field>
+        <field name="sequence">180</field>
+    </record>
+    <record id="code_group_product_category_small_18" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">갑상선</field>
+        <field name="name">갑상선</field>
+        <field name="sequence">190</field>
+    </record>
+    <record id="code_group_product_category_small_19" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">고환</field>
+        <field name="name">고환</field>
+        <field name="sequence">200</field>
+    </record>
+    <record id="code_group_product_category_small_20" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">곰탕스틱</field>
+        <field name="name">곰탕스틱</field>
+        <field name="sequence">210</field>
+    </record>
+    <record id="code_group_product_category_small_21" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">구이</field>
+        <field name="name">구이</field>
+        <field name="sequence">220</field>
+    </record>
+    <record id="code_group_product_category_small_22" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">국류</field>
+        <field name="name">국류</field>
+        <field name="sequence">230</field>
+    </record>
+    <record id="code_group_product_category_small_23" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">기타</field>
+        <field name="name">기타</field>
+        <field name="sequence">240</field>
+    </record>
+    <record id="code_group_product_category_small_24" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">꼬리</field>
+        <field name="name">꼬리</field>
+        <field name="sequence">250</field>
+    </record>
+    <record id="code_group_product_category_small_25" model="livestock.code">
+        <field name="group_id" ref="code_group_product_category_small"/>
+        <field name="code">꼬리반골</field>
+        <field name="name">꼬리반골</field>
+        <field name="sequence">260</field>
+    </record>
+</odoo>

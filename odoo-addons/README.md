@@ -20,12 +20,26 @@
 | 6 | `meatwatch_integration` (미트와치 API 연동) | 예정 |
 | 7 | `livestock_account_fintech` (세금계산서 + 핀테크 회계 연동) | 예정 |
 
-## livestock_base 모듈 구성
-- `livestock.species`: 축종 마스터 (소/돼지/닭 국내, 수입우/수입돈)
-- `livestock.grade`: 축종별 등급 마스터 (축평원 등급 기준, 시드 데이터 포함)
-- `livestock.code.group` / `livestock.code`: 공통코드 마스터 (포장단위/배송구분/출하구분 등, 화면에서 직접 추가 가능)
-- `res.partner.sales_channel`, `business_reg_no`: 거래처 영업채널, 사업자등록번호
-- `product.template`: 축종/등급/원산지/이력추적 대상/포장단위/유통기한 확장 필드
+## livestock_base 모듈 구성 (제공받은 엑셀 분석 반영)
+- `livestock.species`: 품종/축종 마스터 (한우/한돈/계육/수입우/수입돈)
+- `livestock.cut`: 부위 마스터 (품종별 부위코드, 샘플 데이터 포함 — 전체 96건은 엑셀 일괄 업로드 권장)
+- `livestock.grade`: 등급 마스터
+- `livestock.product.account`: 품목계정등록 (01상품~10재공품, 회계계정 연동 필드 포함)
+- `livestock.uom` / `livestock.uom.conversion`: 단위관리 / 환산단위관리 (부위별 단위 변환 규칙)
+- `livestock.code.group` / `livestock.code`: 공통코드 마스터
+  - 대/중/소분류, 성별, 친환경구분, 보관, 용도, 축산물유형, 박스종류
+  - 유통구조, 거래처분류값, 거래처종류, 매출처유형(신고용)
+- `res.partner`: 거래처 등록 양식 전체 필드 반영 (사업자번호, 신용등급, 법인/개인, 전자세금계산서 구분, 목장/도축장/가공장 여부, 미트와치교부번호, 계좌정보 등)
+- `product.template`: 품목 등록 양식 전체 필드 반영 (품목계정, 대중소분류, 축산물 분류, 부가세, 생산유형, 포장/유통/이력 정보 등)
+
+### 신규등록 화면 (전체화면 + 권한 제한)
+- "거래처 신규등록" / "품목 신규등록" 메뉴는 `group_livestock_registrar` 권한 그룹에만 보입니다.
+- 일반 사용자는 기존 거래처/품목 목록에서 조회·수정만 가능합니다.
+- 권한 부여: 설정 → 사용자 → 해당 직원에게 "축산물ERP - 거래처/품목 신규등록 권한자" 그룹 추가.
+
+### 남은 작업 (대량 데이터 일괄 등록)
+- 품목소분류(263건), 부위코드(96건), 환산단위(220건) 등은 샘플만 입력해두었습니다.
+- 추후 "엑셀 업로드" 기능(가져오기/내보내기)을 통해 전체 데이터를 일괄 등록하는 단계가 필요합니다.
 
 ## 설치 방법 (로컬 Docker 환경)
 `odoo-docker-compose.yml`의 `./addons` 볼륨 경로를 이 `odoo-addons` 폴더로 매핑한 뒤,

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <!-- 한우 부위 (샘플, 전체 약 96건은 엑셀 일괄 업로드로 등록 권장) -->
+    <record id="cut_cattle_kr_430170" model="livestock.cut">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="code">430170</field>
+        <field name="name">1차부산물</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="cut_cattle_kr_430160" model="livestock.cut">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="code">430160</field>
+        <field name="name">2차부산물</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="cut_cattle_kr_430150" model="livestock.cut">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="code">430150</field>
+        <field name="name">갈비</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="cut_cattle_kr_430131" model="livestock.cut">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="code">430131</field>
+        <field name="name">갈비덧살</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="cut_cattle_kr_4301b0" model="livestock.cut">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="code">4301B0</field>
+        <field name="name">갈비살</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="cut_cattle_kr_b1021" model="livestock.cut">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="code">B1021</field>
+        <field name="name">안심</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="cut_cattle_kr_b1022" model="livestock.cut">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="code">B1022</field>
+        <field name="name">등심</field>
+        <field name="sequence">70</field>
+    </record>
+
+    <!-- 한돈 부위 (샘플) -->
+    <record id="cut_pig_kr_430465" model="livestock.cut">
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="code">430465</field>
+        <field name="name">가브리살</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="cut_pig_kr_430444" model="livestock.cut">
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="code">430444</field>
+        <field name="name">간</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="cut_pig_kr_430429" model="livestock.cut">
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="code">430429</field>
+        <field name="name">갈매기살</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="cut_pig_kr_p1001" model="livestock.cut">
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="code">P1001</field>
+        <field name="name">안심</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="cut_pig_kr_p1002" model="livestock.cut">
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="code">P1002</field>
+        <field name="name">등심</field>
+        <field name="sequence">50</field>
+    </record>
+</odoo>

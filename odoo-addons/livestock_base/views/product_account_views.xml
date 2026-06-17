@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_livestock_product_account_list" model="ir.ui.view">
+        <field name="name">livestock.product.account.list</field>
+        <field name="model">livestock.product.account</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="asset_type"/>
+                <field name="inventory_managed"/>
+                <field name="inventory_value_managed"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_livestock_product_account_form" model="ir.ui.view">
+        <field name="name">livestock.product.account.form</field>
+        <field name="model">livestock.product.account</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <group string="기본 정보">
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="asset_type"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                        </group>
+                        <group string="관리 여부">
+                            <field name="inventory_managed"/>
+                            <field name="inventory_value_managed"/>
+                            <field name="usable_as_other_account"/>
+                            <field name="usable_from_other_account"/>
+                        </group>
+                    </group>
+                    <group string="연동 회계계정">
+                        <field name="asset_account_id"/>
+                        <field name="domestic_sales_account_id"/>
+                        <field name="local_sales_account_id"/>
+                        <field name="export_sales_account_id"/>
+                        <field name="production_input_account_id"/>
+                        <field name="cogs_account_id"/>
+                        <field name="transfer_in_account_id"/>
+                        <field name="transfer_out_account_id"/>
+                        <field name="outsourcing_account_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_livestock_product_account" model="ir.actions.act_window">
+        <field name="name">품목계정</field>
+        <field name="res_model">livestock.product.account</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

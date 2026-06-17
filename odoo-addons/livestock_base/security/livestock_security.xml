@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_livestock_registrar" model="res.groups">
+        <field name="name">축산물ERP - 거래처/품목 신규등록 권한자</field>
+        <field name="category_id" ref="base.module_category_human_resources"/>
+        <field name="comment">거래처/품목 신규등록 전체화면을 사용할 수 있는 권한 그룹. 일반 사용자는 조회/수정만 가능.</field>
+    </record>
+</odoo>

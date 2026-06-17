@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_livestock_uom_list" model="ir.ui.view">
+        <field name="name">livestock.uom.list</field>
+        <field name="model">livestock.uom</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="code"/>
+                <field name="note"/>
+                <field name="measure_type"/>
+                <field name="rounding_mode"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_livestock_uom" model="ir.actions.act_window">
+        <field name="name">단위관리</field>
+        <field name="res_model">livestock.uom</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <record id="view_livestock_uom_conversion_list" model="ir.ui.view">
+        <field name="name">livestock.uom.conversion.list</field>
+        <field name="model">livestock.uom.conversion</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="species_id"/>
+                <field name="cut_code"/>
+                <field name="cut_name"/>
+                <field name="sequence" widget="handle"/>
+                <field name="base_uom_id"/>
+                <field name="base_qty"/>
+                <field name="target_uom_id"/>
+                <field name="target_qty"/>
+                <field name="decimal_digits"/>
+                <field name="rounding_mode"/>
+                <field name="note"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_livestock_uom_conversion" model="ir.actions.act_window">
+        <field name="name">환산단위관리</field>
+        <field name="res_model">livestock.uom.conversion</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

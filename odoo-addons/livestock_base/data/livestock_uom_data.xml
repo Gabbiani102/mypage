@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <record id="uom_g" model="livestock.uom">
+        <field name="code">g</field>
+        <field name="note">그램</field>
+        <field name="measure_type">weight</field>
+        <field name="rounding_mode">floor</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="uom_kg" model="livestock.uom">
+        <field name="code">Kg</field>
+        <field name="note">킬로그램</field>
+        <field name="measure_type">weight</field>
+        <field name="rounding_mode">round</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="uom_t" model="livestock.uom">
+        <field name="code">t</field>
+        <field name="note">톤</field>
+        <field name="measure_type">weight</field>
+        <field name="rounding_mode">ceil</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="uom_lb" model="livestock.uom">
+        <field name="code">lb</field>
+        <field name="note">파운드</field>
+        <field name="measure_type">weight</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="uom_l" model="livestock.uom">
+        <field name="code">L</field>
+        <field name="note">리터</field>
+        <field name="measure_type">volume</field>
+        <field name="sequence">50</field>
+    </record>
+    <record id="uom_ml" model="livestock.uom">
+        <field name="code">ml</field>
+        <field name="note">밀리리터</field>
+        <field name="measure_type">volume</field>
+        <field name="sequence">60</field>
+    </record>
+    <record id="uom_ea" model="livestock.uom">
+        <field name="code">EA</field>
+        <field name="note">개</field>
+        <field name="measure_type">quantity</field>
+        <field name="sequence">70</field>
+    </record>
+    <record id="uom_mm" model="livestock.uom">
+        <field name="code">mm</field>
+        <field name="note">밀리미터</field>
+        <field name="measure_type">length</field>
+        <field name="sequence">80</field>
+    </record>
+    <record id="uom_cm" model="livestock.uom">
+        <field name="code">cm</field>
+        <field name="note">센티미터</field>
+        <field name="measure_type">length</field>
+        <field name="sequence">90</field>
+    </record>
+    <record id="uom_m" model="livestock.uom">
+        <field name="code">m</field>
+        <field name="note">미터</field>
+        <field name="measure_type">length</field>
+        <field name="sequence">100</field>
+    </record>
+    <record id="uom_roll" model="livestock.uom">
+        <field name="code">ROLL</field>
+        <field name="note">롤</field>
+        <field name="sequence">110</field>
+    </record>
+    <record id="uom_du" model="livestock.uom">
+        <field name="code">두(두)</field>
+        <field name="note">마리</field>
+        <field name="measure_type">head</field>
+        <field name="sequence">120</field>
+    </record>
+    <record id="uom_pcs" model="livestock.uom">
+        <field name="code">PCS</field>
+        <field name="note">개(절단육)</field>
+        <field name="measure_type">quantity</field>
+        <field name="sequence">130</field>
+    </record>
+    <record id="uom_kgm" model="livestock.uom">
+        <field name="code">kg(kg)</field>
+        <field name="note">킬로그램</field>
+        <field name="measure_type">weight</field>
+        <field name="rounding_mode">round</field>
+        <field name="sequence">140</field>
+    </record>
+
+    <!-- 환산단위관리 샘플: 소 안심, 돼지 안심 -->
+    <record id="uom_conv_cattle_sirloin_1" model="livestock.uom.conversion">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="cut_code">B1021</field>
+        <field name="cut_name">소 안심</field>
+        <field name="sequence">10</field>
+        <field name="base_uom_id" ref="uom_du"/>
+        <field name="base_qty">1</field>
+        <field name="target_uom_id" ref="uom_pcs"/>
+        <field name="target_qty">2</field>
+    </record>
+    <record id="uom_conv_cattle_sirloin_2" model="livestock.uom.conversion">
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="cut_code">B1021</field>
+        <field name="cut_name">소 안심</field>
+        <field name="sequence">20</field>
+        <field name="base_uom_id" ref="uom_du"/>
+        <field name="base_qty">1</field>
+        <field name="target_uom_id" ref="uom_kgm"/>
+        <field name="target_qty">6</field>
+    </record>
+    <record id="uom_conv_pig_sirloin_1" model="livestock.uom.conversion">
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="cut_code">P1001</field>
+        <field name="cut_name">돼지 안심</field>
+        <field name="sequence">10</field>
+        <field name="base_uom_id" ref="uom_du"/>
+        <field name="base_qty">1</field>
+        <field name="target_uom_id" ref="uom_pcs"/>
+        <field name="target_qty">1</field>
+        <field name="note">안심은 1두당 1개</field>
+    </record>
+    <record id="uom_conv_pig_sirloin_2" model="livestock.uom.conversion">
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="cut_code">P1001</field>
+        <field name="cut_name">돼지 안심</field>
+        <field name="sequence">20</field>
+        <field name="base_uom_id" ref="uom_du"/>
+        <field name="base_qty">1</field>
+        <field name="target_uom_id" ref="uom_kgm"/>
+        <field name="target_qty">0.6</field>
+        <field name="note">표준중량 0.6kg</field>
+    </record>
+</odoo>

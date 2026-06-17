@@ -7,3 +7,11 @@ access_livestock_code_group_user,livestock.code.group.user,model_livestock_code_
 access_livestock_code_group_manager,livestock.code.group.manager,model_livestock_code_group,base.group_system,1,1,1,1
 access_livestock_code_user,livestock.code.user,model_livestock_code,base.group_user,1,0,0,0
 access_livestock_code_manager,livestock.code.manager,model_livestock_code,base.group_system,1,1,1,1
+access_livestock_cut_user,livestock.cut.user,model_livestock_cut,base.group_user,1,0,0,0
+access_livestock_cut_manager,livestock.cut.manager,model_livestock_cut,base.group_system,1,1,1,1
+access_livestock_product_account_user,livestock.product.account.user,model_livestock_product_account,base.group_user,1,0,0,0
+access_livestock_product_account_manager,livestock.product.account.manager,model_livestock_product_account,base.group_system,1,1,1,1
+access_livestock_uom_user,livestock.uom.user,model_livestock_uom,base.group_user,1,0,0,0
+access_livestock_uom_manager,livestock.uom.manager,model_livestock_uom,base.group_system,1,1,1,1
+access_livestock_uom_conversion_user,livestock.uom.conversion.user,model_livestock_uom_conversion,base.group_user,1,0,0,0
+access_livestock_uom_conversion_manager,livestock.uom.conversion.manager,model_livestock_uom_conversion,base.group_system,1,1,1,1

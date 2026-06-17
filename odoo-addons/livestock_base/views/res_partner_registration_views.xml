@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_registration_form" model="ir.ui.view">
+        <field name="name">res.partner.registration.form</field>
+        <field name="model">res.partner</field>
+        <field name="priority">99</field>
+        <field name="arch" type="xml">
+            <form string="거래처 신규등록">
+                <sheet>
+                    <group string="기본 정보">
+                        <group>
+                            <field name="name" string="거래처명"/>
+                            <field name="distribution_structure_id"/>
+                            <field name="partner_classification_id"/>
+                            <field name="partner_type_ids" widget="many2many_tags"/>
+                            <field name="domestic_overseas"/>
+                            <field name="country_id"/>
+                            <field name="partner_status"/>
+                            <field name="credit_grade"/>
+                        </group>
+                        <group>
+                            <field name="business_reg_no"/>
+                            <field name="corporate_individual"/>
+                            <field name="corporate_no"/>
+                            <field name="resident_reg_no"/>
+                            <field name="representative_name"/>
+                            <field name="phone"/>
+                            <field name="sub_business_place_no"/>
+                            <field name="business_type"/>
+                            <field name="business_item"/>
+                        </group>
+                    </group>
+                    <group string="주소/연락처">
+                        <group>
+                            <field name="zip"/>
+                            <field name="street"/>
+                            <field name="street2"/>
+                            <field name="email"/>
+                            <field name="website"/>
+                        </group>
+                        <group>
+                            <field name="business_start_date"/>
+                            <field name="comment" string="거래처설명"/>
+                        </group>
+                    </group>
+                    <group string="세금/계산서">
+                        <group>
+                            <field name="einvoice_issue_exception"/>
+                            <field name="einvoice_consolidated_issue"/>
+                            <field name="sales_report_type_id"/>
+                        </group>
+                        <group>
+                            <field name="bank_name"/>
+                            <field name="bank_account_no"/>
+                            <field name="account_holder_name"/>
+                        </group>
+                    </group>
+                    <group string="축산물 관련 정보">
+                        <group>
+                            <field name="farm_flag"/>
+                            <field name="slaughterhouse_flag"/>
+                            <field name="processing_plant_flag"/>
+                            <field name="slaughterhouse_code"/>
+                        </group>
+                        <group>
+                            <field name="meatwatch_partner_no"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_partner_registration" model="ir.actions.act_window">
+        <field name="name">거래처 신규등록</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_partner_registration_form"/>
+        <field name="target">current</field>
+        <field name="context">{'default_is_company': True}</field>
+        <field name="groups_id" eval="[(4, ref('group_livestock_registrar'))]"/>
+    </record>
+</odoo>
