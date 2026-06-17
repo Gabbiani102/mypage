@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <!-- 포장단위 -->
+    <record id="code_group_packaging_unit" model="livestock.code.group">
+        <field name="code">PACKAGING_UNIT</field>
+        <field name="name">포장단위</field>
+    </record>
+    <record id="code_packaging_box" model="livestock.code">
+        <field name="group_id" ref="code_group_packaging_unit"/>
+        <field name="code">BOX</field>
+        <field name="name">박스</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_packaging_kg" model="livestock.code">
+        <field name="group_id" ref="code_group_packaging_unit"/>
+        <field name="code">KG</field>
+        <field name="name">kg</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_packaging_head" model="livestock.code">
+        <field name="group_id" ref="code_group_packaging_unit"/>
+        <field name="code">HEAD</field>
+        <field name="name">마리</field>
+        <field name="sequence">30</field>
+    </record>
+
+    <!-- 배송구분 -->
+    <record id="code_group_shipping_type" model="livestock.code.group">
+        <field name="code">SHIPPING_TYPE</field>
+        <field name="name">배송구분</field>
+    </record>
+    <record id="code_shipping_direct" model="livestock.code">
+        <field name="group_id" ref="code_group_shipping_type"/>
+        <field name="code">DIRECT</field>
+        <field name="name">직배송</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_shipping_parcel" model="livestock.code">
+        <field name="group_id" ref="code_group_shipping_type"/>
+        <field name="code">PARCEL</field>
+        <field name="name">택배</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_shipping_pickup" model="livestock.code">
+        <field name="group_id" ref="code_group_shipping_type"/>
+        <field name="code">PICKUP</field>
+        <field name="name">매장픽업</field>
+        <field name="sequence">30</field>
+    </record>
+
+    <!-- 출하구분 -->
+    <record id="code_group_outbound_type" model="livestock.code.group">
+        <field name="code">OUTBOUND_TYPE</field>
+        <field name="name">출하구분</field>
+    </record>
+    <record id="code_outbound_b2b" model="livestock.code">
+        <field name="group_id" ref="code_group_outbound_type"/>
+        <field name="code">B2B_SHIP</field>
+        <field name="name">거래처 출하</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="code_outbound_b2c" model="livestock.code">
+        <field name="group_id" ref="code_group_outbound_type"/>
+        <field name="code">B2C_SHIP</field>
+        <field name="name">개인고객 출하</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="code_outbound_store" model="livestock.code">
+        <field name="group_id" ref="code_group_outbound_type"/>
+        <field name="code">STORE_SHIP</field>
+        <field name="name">매장 출하</field>
+        <field name="sequence">30</field>
+    </record>
+</odoo>

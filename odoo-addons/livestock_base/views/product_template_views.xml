@@ -10,6 +10,8 @@
                 <field name="grade_id"/>
                 <field name="origin_type"/>
                 <field name="traceability_required"/>
+                <field name="packaging_unit_id"/>
+                <field name="shelf_life_days"/>
             </xpath>
         </field>
     </record>

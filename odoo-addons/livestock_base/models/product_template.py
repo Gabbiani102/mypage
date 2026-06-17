@@ -22,3 +22,13 @@ class ProductTemplate(models.Model):
         default=True,
         help="축평원 축산물 이력번호 연동이 필요한 품목인지 여부.",
     )
+    packaging_unit_id = fields.Many2one(
+        "livestock.code",
+        string="포장단위",
+        domain="[('group_id.code', '=', 'PACKAGING_UNIT')]",
+        help="공통코드 마스터의 '포장단위' 그룹에서 선택 (예: 박스, kg, 마리).",
+    )
+    shelf_life_days = fields.Integer(
+        string="유통기한(일)",
+        help="입고/생산일로부터 유통기한까지의 일수.",
+    )

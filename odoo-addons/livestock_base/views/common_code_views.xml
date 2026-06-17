@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_livestock_code_group_list" model="ir.ui.view">
+        <field name="name">livestock.code.group.list</field>
+        <field name="model">livestock.code.group</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="code"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_livestock_code_group_form" model="ir.ui.view">
+        <field name="name">livestock.code.group.form</field>
+        <field name="model">livestock.code.group</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="code"/>
+                        <field name="name"/>
+                        <field name="note"/>
+                    </group>
+                    <field name="code_ids">
+                        <list editable="bottom">
+                            <field name="sequence" widget="handle"/>
+                            <field name="code"/>
+                            <field name="name"/>
+                            <field name="active"/>
+                        </list>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_livestock_code_group" model="ir.actions.act_window">
+        <field name="name">공통코드</field>
+        <field name="res_model">livestock.code.group</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

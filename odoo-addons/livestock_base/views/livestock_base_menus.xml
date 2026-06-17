@@ -6,4 +6,6 @@
               action="action_livestock_species" sequence="10"/>
     <menuitem id="menu_livestock_grade" name="등급" parent="menu_livestock_master_data"
               action="action_livestock_grade" sequence="20"/>
+    <menuitem id="menu_livestock_code_group" name="공통코드" parent="menu_livestock_master_data"
+              action="action_livestock_code_group" sequence="30"/>
 </odoo>

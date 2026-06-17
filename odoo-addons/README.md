@@ -23,8 +23,9 @@
 ## livestock_base 모듈 구성
 - `livestock.species`: 축종 마스터 (소/돼지/닭 국내, 수입우/수입돈)
 - `livestock.grade`: 축종별 등급 마스터 (축평원 등급 기준, 시드 데이터 포함)
-- `res.partner.sales_channel`: 거래처 영업채널 (B2B/B2C/직영매장/가맹매장/외식사업장)
-- `product.template`: 축종/등급/원산지/이력추적 대상 여부 확장 필드
+- `livestock.code.group` / `livestock.code`: 공통코드 마스터 (포장단위/배송구분/출하구분 등, 화면에서 직접 추가 가능)
+- `res.partner.sales_channel`, `business_reg_no`: 거래처 영업채널, 사업자등록번호
+- `product.template`: 축종/등급/원산지/이력추적 대상/포장단위/유통기한 확장 필드
 
 ## 설치 방법 (로컬 Docker 환경)
 `odoo-docker-compose.yml`의 `./addons` 볼륨 경로를 이 `odoo-addons` 폴더로 매핑한 뒤,

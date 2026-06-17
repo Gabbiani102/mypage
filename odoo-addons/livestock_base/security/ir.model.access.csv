@@ -3,3 +3,7 @@ access_livestock_species_user,livestock.species.user,model_livestock_species,bas
 access_livestock_species_manager,livestock.species.manager,model_livestock_species,base.group_system,1,1,1,1
 access_livestock_grade_user,livestock.grade.user,model_livestock_grade,base.group_user,1,0,0,0
 access_livestock_grade_manager,livestock.grade.manager,model_livestock_grade,base.group_system,1,1,1,1
+access_livestock_code_group_user,livestock.code.group.user,model_livestock_code_group,base.group_user,1,0,0,0
+access_livestock_code_group_manager,livestock.code.group.manager,model_livestock_code_group,base.group_system,1,1,1,1
+access_livestock_code_user,livestock.code.user,model_livestock_code,base.group_user,1,0,0,0
+access_livestock_code_manager,livestock.code.manager,model_livestock_code,base.group_system,1,1,1,1
