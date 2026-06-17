@@ -21,7 +21,7 @@ services:
       PASSWORD: mypassword
     volumes:
       - odoo-web-data:/var/lib/odoo
-      - ./addons:/mnt/extra-addons
+      - ./odoo-addons:/mnt/extra-addons
 
 volumes:
   odoo-db-data:

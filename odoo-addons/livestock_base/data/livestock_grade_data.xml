@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <!-- 소(국내) 등급 -->
+    <record id="grade_cattle_kr_1pp" model="livestock.grade">
+        <field name="code">1++</field>
+        <field name="name">1++</field>
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="sequence">10</field>
+    </record>
+    <record id="grade_cattle_kr_1p" model="livestock.grade">
+        <field name="code">1+</field>
+        <field name="name">1+</field>
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="sequence">20</field>
+    </record>
+    <record id="grade_cattle_kr_1" model="livestock.grade">
+        <field name="code">1</field>
+        <field name="name">1등급</field>
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="sequence">30</field>
+    </record>
+    <record id="grade_cattle_kr_2" model="livestock.grade">
+        <field name="code">2</field>
+        <field name="name">2등급</field>
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="sequence">40</field>
+    </record>
+    <record id="grade_cattle_kr_3" model="livestock.grade">
+        <field name="code">3</field>
+        <field name="name">3등급</field>
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="sequence">50</field>
+    </record>
+    <record id="grade_cattle_kr_out" model="livestock.grade">
+        <field name="code">OUT</field>
+        <field name="name">등외</field>
+        <field name="species_id" ref="species_cattle_kr"/>
+        <field name="sequence">60</field>
+    </record>
+
+    <!-- 돼지(국내) 등급 -->
+    <record id="grade_pig_kr_1p" model="livestock.grade">
+        <field name="code">1+</field>
+        <field name="name">1+</field>
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="sequence">10</field>
+    </record>
+    <record id="grade_pig_kr_1" model="livestock.grade">
+        <field name="code">1</field>
+        <field name="name">1등급</field>
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="sequence">20</field>
+    </record>
+    <record id="grade_pig_kr_2" model="livestock.grade">
+        <field name="code">2</field>
+        <field name="name">2등급</field>
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="sequence">30</field>
+    </record>
+    <record id="grade_pig_kr_out" model="livestock.grade">
+        <field name="code">OUT</field>
+        <field name="name">등외</field>
+        <field name="species_id" ref="species_pig_kr"/>
+        <field name="sequence">40</field>
+    </record>
+</odoo>

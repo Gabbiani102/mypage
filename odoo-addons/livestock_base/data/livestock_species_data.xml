@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+    <record id="species_cattle_kr" model="livestock.species">
+        <field name="code">CATTLE_KR</field>
+        <field name="name">소 (국내)</field>
+        <field name="origin_type">domestic</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="species_pig_kr" model="livestock.species">
+        <field name="code">PIG_KR</field>
+        <field name="name">돼지 (국내)</field>
+        <field name="origin_type">domestic</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="species_chicken_kr" model="livestock.species">
+        <field name="code">CHICKEN_KR</field>
+        <field name="name">닭 (국내)</field>
+        <field name="origin_type">domestic</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="species_cattle_imp" model="livestock.species">
+        <field name="code">CATTLE_IMP</field>
+        <field name="name">수입우</field>
+        <field name="origin_type">import</field>
+        <field name="sequence">40</field>
+    </record>
+    <record id="species_pig_imp" model="livestock.species">
+        <field name="code">PIG_IMP</field>
+        <field name="name">수입돈</field>
+        <field name="origin_type">import</field>
+        <field name="sequence">50</field>
+    </record>
+</odoo>

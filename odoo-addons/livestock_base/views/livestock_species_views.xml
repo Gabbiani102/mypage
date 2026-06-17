@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_livestock_species_list" model="ir.ui.view">
+        <field name="name">livestock.species.list</field>
+        <field name="model">livestock.species</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="code"/>
+                <field name="name"/>
+                <field name="origin_type"/>
+                <field name="active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_livestock_species_form" model="ir.ui.view">
+        <field name="name">livestock.species.form</field>
+        <field name="model">livestock.species</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="code"/>
+                        <field name="origin_type"/>
+                        <field name="sequence"/>
+                        <field name="active"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_livestock_species" model="ir.actions.act_window">
+        <field name="name">축종</field>
+        <field name="res_model">livestock.species</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

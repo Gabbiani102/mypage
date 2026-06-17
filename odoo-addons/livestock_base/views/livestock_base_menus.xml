@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_livestock_root" name="축산물 ERP" sequence="5"/>
+    <menuitem id="menu_livestock_master_data" name="마스터 데이터" parent="menu_livestock_root" sequence="10"/>
+    <menuitem id="menu_livestock_species" name="축종" parent="menu_livestock_master_data"
+              action="action_livestock_species" sequence="10"/>
+    <menuitem id="menu_livestock_grade" name="등급" parent="menu_livestock_master_data"
+              action="action_livestock_grade" sequence="20"/>
+</odoo>
